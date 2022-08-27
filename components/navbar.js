@@ -1,6 +1,6 @@
 let navbar = () =>{
     return `
-    <div class="navbar_container">
+    
         <div class="navbar">
             <div>
             <div>
@@ -41,7 +41,7 @@ let navbar = () =>{
         <div><a href="">Surgeries</a></div>
         <div><a href="">Value Store</a></div>
     </div>
-    </div>
+  
     `;
 };
 export default navbar;
