@@ -1,14 +1,5 @@
 
 
-  import navbar from "../components/navbar.js";
-  let navbarContainer = document.querySelector("#nav_container");
-  navbarContainer.innerHTML = navbar();
-
-  import footer from "../components/footer.js";
-  let footerContainer = document.querySelector("#footer_container");
-  footerContainer.innerHTML = footer();
-
-
 let surgeryData=[
     {
       "surgery-block href": "https://pharmeasy.in/surgicare/piles.html",

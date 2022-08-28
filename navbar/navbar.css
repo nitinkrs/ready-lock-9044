@@ -90,12 +90,14 @@ position: fixed;
     padding: 0 10px;
 }
 .sub_nav{
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px 100px;
-    background-color: #EEF4FF;
+   display: flex;
+   height: 40px;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.sub_nav>div{
+   
+    /* margin-left: 64px; */
 }
 .sub_nav a{
     text-decoration: none;

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./surgery_styles/surgery.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://kit.fontawesome.com/86d497a8b5.js" crossorigin="anonymous"></script>
     <title>Pharmeasy SurgiCare - Trustworthy & Thoughtful surgeries</title>
 </head>
@@ -154,4 +156,13 @@
 <div id="footer_container"></div>
 </body>
 </html>
-<script src="./surgery_scripts/surgery.js" type="module"></script>
+<script src="./surgery_scripts/surgery.js"></script>
+<script type="module">
+    import navbar from "../components/navbar.js";
+  let navbarContainer = document.querySelector("#nav_container");
+  navbarContainer.innerHTML = navbar();
+
+  import footer from "../components/footer.js";
+  let footerContainer = document.querySelector("#footer_container");
+  footerContainer.innerHTML = footer();
+</script>

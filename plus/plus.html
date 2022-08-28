@@ -7,7 +7,9 @@
     <title>PharmEasy Plus</title>
     <script src="https://kit.fontawesome.com/86d497a8b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./plus_styles/plus.css">
-</head>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+  </head>
 <body>
     <div id="nav_container"></div>
     <div id="upper_part">
@@ -185,8 +187,18 @@
     <p>Yes, cashback benefits are not applicable on baby food products that cater to infants under the age of 1.</p>
   </div>
 </div>
+<div id="footer_container"></div>
 </div>
-    <div id="footer_container"></div>
+   
 </body>
 </html>
-<script src="./plus_scripts/plus.js" type="module"></script>
+<script src="./plus_scripts/plus.js"></script>
+<script type="module">
+  import navbar from "../components/navbar.js";
+let navbarContainer = document.querySelector("#nav_container");
+navbarContainer.innerHTML = navbar();
+
+import footer from "../components/footer.js";
+let footerContainer = document.querySelector("#footer_container");
+footerContainer.innerHTML = footer();
+</script>

@@ -1,6 +1,6 @@
 let navbar = () =>{
     return `
-    <div class="navbar_container">
+   
         <div class="navbar">
             <div>
             <div>
@@ -32,16 +32,16 @@ let navbar = () =>{
         </div>
     
     <div class="sub_nav">
-        <div><a href="">Medicine</a></div>
-        <div><a href="">Lab Test</a></div>
+        <div><a href="../Medicine/medicine.html">Medicine</a></div>
+        <div><a href="../Lab Test/lab_test.html">Lab Test</a></div>
         <div><a href="">Healthcare</a></div>
         <div><a href="">Health Blogs</a></div>
-        <div><a href="">PLUS</a></div>
-        <div><a href="">Offers</a></div>
-        <div><a href="">Surgeries</a></div>
+        <div><a href="../plus/plus.html">PLUS</a></div>
+        <div><a href="../offers/offers.html">Offers</a></div>
+        <div><a href="../surgeries/surgery.html">Surgeries</a></div>
         <div><a href="">Value Store</a></div>
-    </div>
-    </div>
-    `;
+    </div>`
+  
+    
 };
 export default navbar;

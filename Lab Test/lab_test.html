@@ -8,10 +8,13 @@
     <script src="https://kit.fontawesome.com/86d497a8b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./lab_test-styles/lab_test.css">
      <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="../navbar/navbar.css">
+     <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <body>
+  <div id="nav_container"></div>
     <div id="img_slider">
-<div class="swiper">
+    <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="https://cms-contents.pharmeasy.in/banner/0e7af32e438-2_HP_634x274.jpg" alt=""></div>
       <div class="swiper-slide"><img src="https://cms-contents.pharmeasy.in/banner/34b5c9105c6-On-time-or-FREEEE_HP_634x274.jpg" alt=""></div>
@@ -203,7 +206,17 @@
             <p>At PharmEasy, you save at every step! On diagnostic tests, get up to 70% OFF on various tests and test packages.</p>
           </div>
         </div>
+        <div id="footer_container"></div>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./lab_test-scripts/lab_test.js"></script>
+<script type="module">
+  import navbar from "../components/navbar.js";
+let navbarContainer = document.querySelector("#nav_container");
+navbarContainer.innerHTML = navbar();
+
+import footer from "../components/footer.js";
+let footerContainer = document.querySelector("#footer_container");
+footerContainer.innerHTML = footer();
+</script>

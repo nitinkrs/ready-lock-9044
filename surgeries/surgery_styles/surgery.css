@@ -19,16 +19,10 @@ display: flex;
     margin-top: 80px;
     margin-right: 50px;
 }
-#options{
- 
-}
+
 .first{
-   
-   
     display: flex;
     align-items: center;
-   
-   
 }
 .first>div{
     margin: 5px; 
@@ -198,4 +192,9 @@ border-radius: 10px;
     padding: 5px;
     width: fit-content;
     border-radius: 5px;
+}
+#footer_container{
+    margin-top: 50px;
+    background-color: #EEF4FF;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
